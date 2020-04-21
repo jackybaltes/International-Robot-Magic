@@ -1,0 +1,821 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>International Robot Magic</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ntnuerc.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <script src="https://daybrush.com/scenejs/release/latest/dist/scene.min.js"></script>
+		
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <script src="js/ntnu.js"></script>
+    </head>
+    <body>
+        <div class="reveal">
+        <div class="slides">
+            
+<section id="start" data-state="start">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>International Robot Magic</h1>
+
+<p>
+      Jacky Baltes<br>
+      National Taiwan Normal University<br>
+      Taipei, Taiwan<br>
+      <a href="mailto:jacky.baltes@ntnu.edu.tw">jacky.baltes@ntnu.edu.tw</a><br>
+      21 April 2020
+</p>
+
+<class 'datetime.date'>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-5e536a68-7075-4469-8147-2a23205f5977" ><span id="id-5e536a68-7075-4469-8147-2a23205f5977"><img id="img-id-5e536a68-7075-4469-8147-2a23205f5977"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-0107a2ec-43e1-4a43-aeb8-1a5a75b5f967" ><span id="id-0107a2ec-43e1-4a43-aeb8-1a5a75b5f967"><img id="img-id-0107a2ec-43e1-4a43-aeb8-1a5a75b5f967" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00003_frag_00001" data-state="slide_00003_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Business Model</h1>
+<table>
+<tr>
+<td style="font-size:0.7em; width=60%">
+<p>Robot entertainment shows with our partners</p>
+<ul>
+<li>Installation for theme parks</li>
+<li>Shows for casinos and hotels</li>
+<li>Installation during exhibitions, mall openings, etc.</li>
+</ul>
+
+<p>Service contracts for maintaining and updating performances and robots</p>
+</td>
+<td style="width:50%">
+<div>
+<span id="id-2e66afcb-7ec1-4dc6-96fa-d127ab8da2fe" ><span id="id-2e66afcb-7ec1-4dc6-96fa-d127ab8da2fe"><img id="img-id-2e66afcb-7ec1-4dc6-96fa-d127ab8da2fe"     src="assets/images/iros2019_1.png"/></span>
+</span>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-9e13a4da-01ce-4421-ba46-d024141ffbaf" ><span id="id-9e13a4da-01ce-4421-ba46-d024141ffbaf"><img id="img-id-9e13a4da-01ce-4421-ba46-d024141ffbaf"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-740129c1-a8d0-42a6-863d-b6e8aa0322be" ><span id="id-740129c1-a8d0-42a6-863d-b6e8aa0322be"><img id="img-id-740129c1-a8d0-42a6-863d-b6e8aa0322be" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00004_frag_00001" data-state="slide_00004_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Market Research</h1>
+<table>
+<tr>
+<td style="font-size:0.7em; width=60%">
+<p>Humanoid robots are our key components of robot entertainment</p>
+<p>Other examples: drone teams from Intel, Taiwan, R-Tech... </p>
+<p>Major competitors include: Robotis Inc., Kuka, UBTech, Sony, Aldebaran, Robobuilder</p>
+</td>
+<td style="width:50%">
+<div>
+<span id="id-48192fd2-703f-4a10-b289-957ae03aa69b" ><span id="id-48192fd2-703f-4a10-b289-957ae03aa69b">
+           <video id="vid-id-48192fd2-703f-4a10-b289-957ae03aa69b"   style="pointer-events:all;" controls>
+           <source src="assets/videos/vid1.mp4"/>
+           </span>
+</span>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-94462b50-e63f-457a-885b-3b1f8df656bf" ><span id="id-94462b50-e63f-457a-885b-3b1f8df656bf"><img id="img-id-94462b50-e63f-457a-885b-3b1f8df656bf"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-978a99a7-cb12-4577-a390-20a9ed4f7263" ><span id="id-978a99a7-cb12-4577-a390-20a9ed4f7263"><img id="img-id-978a99a7-cb12-4577-a390-20a9ed4f7263" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00005_frag_00001" data-state="slide_00005_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Market Analysis</h1>
+<table>
+<tr>
+<td style="font-size:0.7em; width=70%">
+<p>Automation is flat or even contracting</p>
+<p>Entertainment and food are exploding</p>
+
+</td>
+<td style="width:30%">
+<div>
+<span id="id-de0b5034-8bc6-4f5b-a398-9c783ce0e919" ><span id="id-de0b5034-8bc6-4f5b-a398-9c783ce0e919"><img id="img-id-de0b5034-8bc6-4f5b-a398-9c783ce0e919"     src="assets/images/pic3.png"/></span>
+</span>
+
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<p>43.3% compounded annual growth</p>
+</td>
+<td style="width:50%"><div>
+<span id="id-a11e8d17-1a71-4af6-866c-b486dcf86046" ><span id="id-a11e8d17-1a71-4af6-866c-b486dcf86046"><img id="img-id-a11e8d17-1a71-4af6-866c-b486dcf86046"     src="assets/images/pic4.png"/></span>
+</span>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-598bfaf2-fd48-4960-a2c0-d3f5a20af19e" ><span id="id-598bfaf2-fd48-4960-a2c0-d3f5a20af19e"><img id="img-id-598bfaf2-fd48-4960-a2c0-d3f5a20af19e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-adcbaca3-7740-45b1-8455-d2159a1381aa" ><span id="id-adcbaca3-7740-45b1-8455-d2159a1381aa"><img id="img-id-adcbaca3-7740-45b1-8455-d2159a1381aa" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00006_frag_00001" data-state="slide_00006_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Market Analysis for Entertainment Robots</h1>
+<table>
+<tr>
+<td style="font-size:0.7em; width=60%">
+<p>Public relations robots are on the rise</p>
+<p>5.2bln USD in 2017 (IFR) </p>
+<p>20% - 25% CAGR</p>
+</td>
+<td style="width:50%">
+<div>
+<span id="id-a5398b17-ca4b-494a-becd-450b52e3376e" ><span id="id-a5398b17-ca4b-494a-becd-450b52e3376e"><img id="img-id-a5398b17-ca4b-494a-becd-450b52e3376e"     src="assets/images/pic6.png"/></span>
+</span>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-6b236998-dc07-463e-bcf1-1b0acef36d30" ><span id="id-6b236998-dc07-463e-bcf1-1b0acef36d30"><img id="img-id-6b236998-dc07-463e-bcf1-1b0acef36d30"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-85b5eb5c-68fb-432f-a972-6cc4e6a4c323" ><span id="id-85b5eb5c-68fb-432f-a972-6cc4e6a4c323"><img id="img-id-85b5eb5c-68fb-432f-a972-6cc4e6a4c323" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00007_frag_00001" data-state="slide_00007_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Competitive Analysis</h1>
+
+<div class="jb-text">
+<p>World-class team of robot designers, developers, and media artists</p>
+<p>Winner of the IEEE IROS Robot Magic Show 2018, '19</p>
+</div>
+<div>
+<table>
+<tr>
+<td> <span id="id-f72424db-54f7-4a08-8e6d-e386cf3263bf" ><span id="id-f72424db-54f7-4a08-8e6d-e386cf3263bf"><img id="img-id-f72424db-54f7-4a08-8e6d-e386cf3263bf"     src="assets/images/magic1.png"/></span>
+</span>
+ </td>
+<td> <span id="id-de537d5b-2752-4881-afe0-51ad4fd3670b" ><span id="id-de537d5b-2752-4881-afe0-51ad4fd3670b"><img id="img-id-de537d5b-2752-4881-afe0-51ad4fd3670b"     src="assets/images/magic2.png"/></span>
+</span>
+ </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-d8ff8f87-c1fb-4425-9783-daaacb1344f3" ><span id="id-d8ff8f87-c1fb-4425-9783-daaacb1344f3"><img id="img-id-d8ff8f87-c1fb-4425-9783-daaacb1344f3"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-0a3f57ef-3fcd-4cbb-8adc-2b56cef60bcf" ><span id="id-0a3f57ef-3fcd-4cbb-8adc-2b56cef60bcf"><img id="img-id-0a3f57ef-3fcd-4cbb-8adc-2b56cef60bcf" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00008_frag_00001" data-state="slide_00008_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Opportunities</h1>
+
+<table>
+<tr>
+<td style="font-size:0.7em; width=60%">
+<p>Robotland Foundation (Korea). Robot theme park. Three demos: Aug '19, Sept. '19, Aug. '20</p>
+<p> Gilbo Elektr Mak. Enerji Gida Ins. Demonstration of robot magicians at teachers’ conference, April 2020, Istanbul, Turkey
+<p>San Francisco Start-Up</p>
+<p>Casinos in Macau, Singapore, and Las Vegas</p>
+</td>
+<td style="width:50%">
+<div>
+<span id="id-e589d226-aa1d-4c59-8125-43d870a34dff" ><span id="id-e589d226-aa1d-4c59-8125-43d870a34dff"><img id="img-id-e589d226-aa1d-4c59-8125-43d870a34dff"     src="assets/images/spain.png"/></span>
+</span>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-67d80649-5116-4d69-9fb3-4d37d491c96e" ><span id="id-67d80649-5116-4d69-9fb3-4d37d491c96e"><img id="img-id-67d80649-5116-4d69-9fb3-4d37d491c96e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-ab20da29-9254-4b0b-b69c-b29e50ccd38c" ><span id="id-ab20da29-9254-4b0b-b69c-b29e50ccd38c"><img id="img-id-ab20da29-9254-4b0b-b69c-b29e50ccd38c" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00009_frag_00001" data-state="slide_00009_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Risks</h1>
+<table>
+<tr>
+<td style="font-size:0.7em; width=70%">
+<p>Increased competition (e.g., Sony)</p>
+<p>Hardware requires large initial cash investment</p>
+</td>
+<td style="width:30%">
+<div>
+<span id="id-fc034f82-40ae-47ea-b6ce-5f4bd9ad73fb" ><span id="id-fc034f82-40ae-47ea-b6ce-5f4bd9ad73fb"><img id="img-id-fc034f82-40ae-47ea-b6ce-5f4bd9ad73fb"     src="assets/images/cad1.png"/></span>
+</span>
+
+</div>
+</td>
+<td style="width:30%">
+<div>
+<span id="id-c98f04fc-dbe6-47f2-9675-59be182a6250" ><span id="id-c98f04fc-dbe6-47f2-9675-59be182a6250"><img id="img-id-c98f04fc-dbe6-47f2-9675-59be182a6250"     src="assets/images/cad2.png"/></span>
+</span>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-5411f156-8a6a-4c8d-a1ca-61900c6b4d6e" ><span id="id-5411f156-8a6a-4c8d-a1ca-61900c6b4d6e"><img id="img-id-5411f156-8a6a-4c8d-a1ca-61900c6b4d6e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-894c1f60-2390-432e-a796-f0cc5c81a4c2" ><span id="id-894c1f60-2390-432e-a796-f0cc5c81a4c2"><img id="img-id-894c1f60-2390-432e-a796-f0cc5c81a4c2" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00010_frag_00001" data-state="slide_00010_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Team Composition</h1>
+<div class="jb-text">
+<p>Team Leader: Jacky Baltes (Founder: Cogmation Inc.)</p>
+<p>CEO Jinux Kim, former CMO of Robotis Inc., Director of Sales of Neuromeka</p>
+<p>Founders: Jeehyun Yang, Jaesik Jeong</p>
+</div>
+<div>
+<span id="id-b02b8412-0b3c-4689-92c6-6b0809d6a6ae" ><span id="id-b02b8412-0b3c-4689-92c6-6b0809d6a6ae"><img id="img-id-b02b8412-0b3c-4689-92c6-6b0809d6a6ae"     src="assets/images/ann1.png"/></span>
+</span>
+
+</div>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-d57df645-6481-4af3-9879-61c1296b4fde" ><span id="id-d57df645-6481-4af3-9879-61c1296b4fde"><img id="img-id-d57df645-6481-4af3-9879-61c1296b4fde"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-a6e39f40-7ed0-4c2a-a8eb-5af1c195f935" ><span id="id-a6e39f40-7ed0-4c2a-a8eb-5af1c195f935"><img id="img-id-a6e39f40-7ed0-4c2a-a8eb-5af1c195f935" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00011_frag_00001" data-state="slide_00011_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Financial Planning</h1>
+
+<table style="font-size:0.5em">
+<tr>
+<td>
+<ul>
+<p>Year 1</p> 
+<ul>
+<li>Development: $150,000 USD</li> 
+<li>Salaries: $100,000 USD</li>
+<li>Marketing and Sales: $100,000 USD</li> 
+<li>Income: $5,000 USD</li> 
+</ul>
+</ul>
+</td>
+<td>
+<ul>
+<p>Year 3</p> 
+<ul>
+<li>Development: $150,000 USD</li> 
+<li>Salaries: $200,000 USD</li>
+<li>Marketing and Sales: $250,000 USD</li> 
+<li>Income: $150,000 USD</li> 
+</ul>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<p>Year 2</p> 
+<ul>
+<li>Development: $250,000 USD</li> 
+<li>Salaries: $150,000 USD</li>
+<li>Marketing and Sales: $200,000 USD</li> 
+<li>Income: $15,000 USD</li> 
+</ul>
+</ul>
+</td>
+<td>
+<ul>
+<p>Year 4</p> 
+<ul>
+<li>Development: $100,000 USD</li> 
+<li>Salaries: $250,000 USD</li>
+<li>Marketing and Sales: $300,000 USD</li> 
+<li>Income: $500,000 USD</li> 
+</ul>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-ea832e64-2770-48c3-82a2-296115a08375" ><span id="id-ea832e64-2770-48c3-82a2-296115a08375"><img id="img-id-ea832e64-2770-48c3-82a2-296115a08375"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-95ba4636-8946-43fe-8ef3-6059ef3e99ba" ><span id="id-95ba4636-8946-43fe-8ef3-6059ef3e99ba"><img id="img-id-95ba4636-8946-43fe-8ef3-6059ef3e99ba" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00012_frag_00001" data-state="slide_00012_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1>Future Perspective</h1>
+<h1>Risks</h1>
+<table>
+<tr>
+<td style="font-size:0.7em; width=60%">
+<p>Bootstrap successful robot magician company is only first step</p>
+<blockquote>"In 2030, students will learn from robot teachers 10 times faster"<br><a href="https://futurism.com/are-robotic-teachers-the-future">Thomas Frey</a> (21st April 2020)</blockquote>
+<p>Vertical integration - focus on how we can save money rather than technology</p>
+</td>
+<td style="width:50%">
+<div>
+<span id="id-ccdde375-e3dc-4bfa-b522-96cce0bb5ac2" ><span id="id-ccdde375-e3dc-4bfa-b522-96cce0bb5ac2"><img id="img-id-ccdde375-e3dc-4bfa-b522-96cce0bb5ac2"     src="assets/images/darwin1.png"/></span>
+</span>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="id-5253b5f6-33a3-4deb-bca1-d1921066fc53" ><span id="id-5253b5f6-33a3-4deb-bca1-d1921066fc53"><img id="img-id-5253b5f6-33a3-4deb-bca1-d1921066fc53"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="id-ba07c0c2-ed9e-4129-9bf3-32b44ca64514" ><span id="id-ba07c0c2-ed9e-4129-9bf3-32b44ca64514"><img id="img-id-ba07c0c2-ed9e-4129-9bf3-32b44ca64514" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+        </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',  // See http://docs.mathjax.org/en/latest/config-files.html
+                    // tex2jax: {
+                    //     inlineMath: [['$', '$'], ['\(', '\)']],
+                    //     displayMath: [['$$', '$$'], ['\[', '\]']],
+                    //     processEscapes: true,
+                    //     processEnvironments: true,
+                    //     skipTags: ['script', 'noscript', 'style', 'textarea', 'code', 'pre'],
+                    //     displayAlign: 'center',
+                    // }                
+                },
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+        </script>
+
+        <script>
+            <!-- Assets -->
+var assets = {
+"robbi" : new JBImage( "robbi", "12677", "162", "138", "https://i.postimg.cc/K81kVbvQ/ntnuerc-logo-1.png", null, "assets/images/robbi", "png" ),
+"logo" : new JBImage( "logo", "12033", "0", "0", "https://i.postimg.cc/4xvjvdmq/ntnu-ee-logo.png", null, "assets/images/logo", "png" ),
+"fira-logo-1" : new JBImage( "fira-logo-1", "93836", "0", "0", null, null, "assets/images/FIRA-logo-1", "png" ),
+"pairLogo" : new JBImage( "pairLogo", "63051", "0", "0", "https://i.postimg.cc/V63MsGL3/logo-with-transparent-bg.png", null, "assets/images/pairLogo", "png" ),
+"iros2019_1" : new JBImage( "iros2019_1", "1626792", "0", "0", "https://i.postimg.cc/J0635HP2/image.png", null, "assets/images/iros2019_1", "png" ),
+"pic2" : new JBImage( "pic2", "966938", "0", "0", "https://i.postimg.cc/jjyV5PXK/image.png", null, "assets/images/pic2", "png" ),
+"vid1" : new JBVideo( "vid1", "3649943", "0", "0", "https://youtube.com/embed/7ENVBhxXBDY", null, "assets/videos/vid1" ),
+"pic3" : new JBImage( "pic3", "115458", "0", "0", "https://i.postimg.cc/pVfrmcCh/image.png", null, "assets/images/pic3", "png" ),
+"pic4" : new JBImage( "pic4", "328733", "0", "0", "https://i.postimg.cc/dQhMXhkq/image.png", null, "assets/images/pic4", "png" ),
+"pic6" : new JBImage( "pic6", "470189", "0", "0", "https://i.postimg.cc/6qqBbzsw/image.png", null, "assets/images/pic6", "png" ),
+"magic1" : new JBImage( "magic1", "1361453", "0", "0", "https://i.postimg.cc/DZFrGJ91/image.png", null, "assets/images/magic1", "png" ),
+"magic2" : new JBImage( "magic2", "1229023", "0", "0", "https://i.postimg.cc/SR1CHZJG/image.png", null, "assets/images/magic2", "png" ),
+"spain" : new JBImage( "spain", "1249129", "0", "0", "https://i.postimg.cc/4NCcMF4B/image.png", null, "assets/images/spain", "png" ),
+"cad1" : new JBImage( "cad1", "399976", "0", "0", "https://i.postimg.cc/5yvWrt99/image.png", null, "assets/images/cad1", "png" ),
+"cad2" : new JBImage( "cad2", "180874", "0", "0", "https://i.postimg.cc/yN3zgMvc/Robinion-Adult-CAD.png", null, "assets/images/cad2", "png" ),
+"ann1" : new JBImage( "ann1", "280903", "0", "0", "https://i.postimg.cc/Wbb7SH5C/image.png", null, "assets/images/ann1", "png" ),
+"darwin1" : new JBImage( "darwin1", "1253636", "0", "0", "https://i.postimg.cc/PqPX4TDJ/image.png", null, "assets/images/darwin1", "png" ) 
+};
+var assetInstances = {
+    "id-0107a2ec-43e1-4a43-aeb8-1a5a75b5f967": assets["robbi"],
+    "id-740129c1-a8d0-42a6-863d-b6e8aa0322be": assets["robbi"],
+    "id-978a99a7-cb12-4577-a390-20a9ed4f7263": assets["robbi"],
+    "id-adcbaca3-7740-45b1-8455-d2159a1381aa": assets["robbi"],
+    "id-85b5eb5c-68fb-432f-a972-6cc4e6a4c323": assets["robbi"],
+    "id-0a3f57ef-3fcd-4cbb-8adc-2b56cef60bcf": assets["robbi"],
+    "id-ab20da29-9254-4b0b-b69c-b29e50ccd38c": assets["robbi"],
+    "id-894c1f60-2390-432e-a796-f0cc5c81a4c2": assets["robbi"],
+    "id-a6e39f40-7ed0-4c2a-a8eb-5af1c195f935": assets["robbi"],
+    "id-95ba4636-8946-43fe-8ef3-6059ef3e99ba": assets["robbi"],
+    "id-ba07c0c2-ed9e-4129-9bf3-32b44ca64514": assets["robbi"],
+    "id-5e536a68-7075-4469-8147-2a23205f5977": assets["logo"],
+    "id-9e13a4da-01ce-4421-ba46-d024141ffbaf": assets["logo"],
+    "id-94462b50-e63f-457a-885b-3b1f8df656bf": assets["logo"],
+    "id-598bfaf2-fd48-4960-a2c0-d3f5a20af19e": assets["logo"],
+    "id-6b236998-dc07-463e-bcf1-1b0acef36d30": assets["logo"],
+    "id-d8ff8f87-c1fb-4425-9783-daaacb1344f3": assets["logo"],
+    "id-67d80649-5116-4d69-9fb3-4d37d491c96e": assets["logo"],
+    "id-5411f156-8a6a-4c8d-a1ca-61900c6b4d6e": assets["logo"],
+    "id-d57df645-6481-4af3-9879-61c1296b4fde": assets["logo"],
+    "id-ea832e64-2770-48c3-82a2-296115a08375": assets["logo"],
+    "id-5253b5f6-33a3-4deb-bca1-d1921066fc53": assets["logo"],
+    "id-2e66afcb-7ec1-4dc6-96fa-d127ab8da2fe": assets["iros2019_1"],
+    "id-48192fd2-703f-4a10-b289-957ae03aa69b": assets["vid1"],
+    "id-de0b5034-8bc6-4f5b-a398-9c783ce0e919": assets["pic3"],
+    "id-a11e8d17-1a71-4af6-866c-b486dcf86046": assets["pic4"],
+    "id-a5398b17-ca4b-494a-becd-450b52e3376e": assets["pic6"],
+    "id-f72424db-54f7-4a08-8e6d-e386cf3263bf": assets["magic1"],
+    "id-de537d5b-2752-4881-afe0-51ad4fd3670b": assets["magic2"],
+    "id-e589d226-aa1d-4c59-8125-43d870a34dff": assets["spain"],
+    "id-fc034f82-40ae-47ea-b6ce-5f4bd9ad73fb": assets["cad1"],
+    "id-c98f04fc-dbe6-47f2-9675-59be182a6250": assets["cad2"],
+    "id-b02b8412-0b3c-4689-92c6-6b0809d6a6ae": assets["ann1"],
+    "id-ccdde375-e3dc-4bfa-b522-96cce0bb5ac2": assets["darwin1"]
+};
+<!-- End of Assets -->
+
+            convertURLs(assetInstances, "smart-path");
+        </script>
+        <script>
+            <!-- Characters -->
+var characters =
+{};
+<!-- End of Characters -->
+
+        </script>
+    </body>
+</html>
